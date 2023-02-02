@@ -1,10 +1,158 @@
-#root {
+/* Event page css */
+.event-container {
+  background-image: url(assets/bg/african-pattern-blue.png); 
+}
+.nav {
+  background-color: rgba(128, 128, 128, 0.233);
+  box-shadow: 20px;
+}
+.sub-title {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.img-1 {
+  background-image: url(assets/img/img-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: red; */
+  padding: 30px;
+}
+.img-2 {
+  background-image: url(assets/img/img-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: red; */
+  padding: 30px;
+}
+.img-3 {
+  background-image: url(assets/img/img-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  /* background-color: red; */
+}
+
+.ticket-Drops {
+  width: 260px;
+  height: 80px;
+  left: 113px;
+  /* top: 826px; */
+  background: #1BDB6D;
+  border-radius: 12px;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 640px) {
+
+  .navbar {
+    display: none;
+    background: transparent;
+  }
+  /* .title-lg {
+    display: none;
+  } */
+  .title {
+     /* letter-spacing: 4px;  */
+     width: 320px;
+     /* padding: 12px; */
+  }
+
+  .sub-title {
+    /* padding: 12px; */
+  }
+  .comico-logo {
+    position: absolute;
+    z-index: 99;
+    width: 120px;
+    height: 99px;
+    left: 20px;
+    top: 47px;
+  }
+  .comic-con {
+    background-image: url(assets/bg/african-pattern-blue.png);
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 20px;
+    top: 482px;
+    padding: 12px;
+  }
+  .img-2, .img-3 {
+    display: none;
+  }
+  .img-1 {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .event-container {
+    background-image: url(assets/img/img-1.jpg);
+    background-size: cover;
+    height: 100vh;
+  }
+  .ticket-Drops {
+    width: 120px;
+    height: 42px;
+    /* left: 36px;
+    top: 672px; */
+    background: #1BDB6D;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .event-bottom {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 90%;
+    bottom: 0%;
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
+} */
+/* 
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -38,4 +186,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
