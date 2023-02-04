@@ -6,7 +6,7 @@ import Header from './Events-page/Header';
 class EventPage extends React.Component {
   render() {
     return <>
-      <div>
+      <div className="w-full">
         <Header></Header>
         <About></About>
       </div></> 
