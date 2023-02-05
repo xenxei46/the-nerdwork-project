@@ -12,20 +12,51 @@ class Header extends React.Component {
       <div className="flex w-[20%] h-full md:w-full lg:w-full">
         <div className="bg-transparent flex flex-col justify-center items-center w-[40%]">
           <div className="bg-transparent w-[80%] h-[75%]">
-            <img src={COMICON} width="150px" className="comico-logo" />
+            <motion.div 
+              initial={{opacity: 0}}
+              animate={{opacity: 1,x:0, y:-20,}}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              >
+              <img src={COMICON} width="150px" className="comico-logo" />
+            </motion.div>
+           
             <div className="comic-con py-4 absolute z-50">
-              
-              <p className="sub-title nerd-p">Nigeria's Biggest Comic Con</p>
+                <motion.p 
+                  initial={{opacity: 0}} 
+                  animate={{opacity: 1, x:0, y:-20,}}
+                  transition={{ delay: 0.6, duration: 0.6}}
+                  className="sub-title nerd-p">Nigeria's Biggest Comic Con
+                </motion.p>
               <div className="title pb-4">
-                <motion.h1 animate={{ fontSize: 50}}>
+                <motion.h1
+                   initial={{opacity: 0}} 
+                   animate={{opacity: 1, x:0, y:-20}}
+                   transition={{delay: 0.8, duration: 0.2}}
+                   >
                    Nerdwork
                 </motion.h1>
-                <h1 className="event-name">Comic-con</h1>
-                <h1 className="year">2023</h1>
+                <motion.h1 
+                   initial={{opacity: 0}} 
+                   animate={{opacity: 1, x:0, y:-20}}
+                   transition={{delay: 0.9, duration: 0.2}}
+                   >
+                  Comic-con
+                  </motion.h1>
+                <motion.h1 
+                  initial={{opacity: 0}} 
+                  animate={{opacity: 1, x:0, y:-20}}
+                  transition={{delay: 1, duration: 0.2}}
+                  >
+                  2023
+                  </motion.h1>
               </div>
-              <button className="ticket-Drops rounded-md">
+              <motion.button 
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                transition={{delay: 1, duration: 1}}
+                className="ticket-Drops rounded-md">
                 Ticket Drops
-              </button>
+              </motion.button>
             </div>
             <div className="event-bottom bg-black md:hidden lg:hidden">
               <div className="height w-full flex justify-center">
