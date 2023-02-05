@@ -13,8 +13,10 @@
   background-image: url(assets/img/img-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-position: 600px 22px; */
   /* background-color: red; */
   padding: 30px;
+  animation: animateBG 1s linear 0.1s alternate;
 }
 .img-2 {
   background-image: url(assets/img/img-2.jpg);
@@ -22,6 +24,7 @@
   background-size: cover;
   /* background-color: red; */
   padding: 30px;
+  animation: animateBG 1s linear 0.1s alternate;
 }
 .img-3 {
   background-image: url(assets/img/img-3.jpg);
@@ -29,6 +32,21 @@
   background-size: cover;
   padding: 30px;
   /* background-color: red; */
+  animation: animateBG 1s linear 0.1s alternate;
+}
+
+@keyframes animateBG {
+  from {
+    /* background-position: 300px 100px; */
+    transform: scale(4);
+    /* transform: translateX(-400px); */
+    /* transform: translateY(-100px); */
+  }
+  to {
+    /* background-position: 100% 22%; */
+    transform: scale(1);
+  }
+  
 }
 
 .ticket-Drops {
@@ -40,9 +58,7 @@
   border-radius: 12px;
   font-size: 32px;
 }
-
 @media screen and (max-width: 640px) {
-
   .nav {
     display: none;
     background: transparent;

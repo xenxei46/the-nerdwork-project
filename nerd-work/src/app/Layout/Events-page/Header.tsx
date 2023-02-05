@@ -73,7 +73,10 @@ class Header extends React.Component {
             </div>
           </div>
         </div>
-        <div className="img-1 w-[20%] "></div>
+        <motion.div 
+         animate={{x:0}}
+         className="img-1 w-[20%] ">
+         </motion.div>
         <div className="img-2 w-[20%] "></div>
         <div className="img-3 w-[20%] "></div>
       </div>
