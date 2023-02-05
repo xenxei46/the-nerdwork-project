@@ -20,8 +20,7 @@ class Navbar extends React.Component {
                 </button>   
                 <button className="w-30 h-8 rounded-md px-2 m-2">
                     Join our community
-                </button>   
-              
+                </button>              
             </div>
             <div className=" w-[50%] flex justify-end">
                 <button className="w-16 h-8 rounded-md px-2 m-2">
