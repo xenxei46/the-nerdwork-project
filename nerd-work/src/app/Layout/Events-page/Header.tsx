@@ -3,8 +3,8 @@ import Navbar from '../../components/Navbar';
 import COMICON from '../Events-page/img/comiccon.png';
 import { motion } from "framer-motion";
 
-class Header extends React.Component {
-  render() {
+function Header() {
+
     return (<div className="event-container w-full md:h-[100vh] lg:h-[100vh]">
       <div>
           <Navbar></Navbar>
@@ -80,6 +80,5 @@ class Header extends React.Component {
     </div>
     )
   }
-}
 
 export default Header;
