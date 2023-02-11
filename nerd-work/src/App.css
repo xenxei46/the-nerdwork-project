@@ -35,8 +35,6 @@
   background-position: center;
   padding: 30px;
   /* background-color: red; */
- 
-
   /* animation: animate alternate-reverse 10s forwards infinite ease-in-out; */
   animation: animateBG 1s linear 0.1s alternate;
 }

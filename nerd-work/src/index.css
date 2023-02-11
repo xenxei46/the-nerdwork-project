@@ -1,10 +1,11 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
-/* Google Font imports */
-@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@tailwind utilities;
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.cdnfonts.com/css/antipasto-pro');
+@import url('https://fonts.cdnfonts.com/css/antipasto-pro'); */
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -56,11 +57,11 @@ button:hover {
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 110px;
   font-weight: 800;
   font-family: system-ui,  'Montserrat', '-apple-system, BlinkMacSystemFont', 'Segoe UI', 'Roboto, Oxygen, Ubuntu, Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
   /* add font family monserat from ggogle api */
-  line-height: 80px;
+  line-height: 85px;
   text-shadow: 3px 3px #070707f3;
 }
 

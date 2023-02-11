@@ -11,10 +11,10 @@ function Header() {
       </div>
       <div className="flex w-[20%] h-full md:w-full lg:w-full">
         <div className="bg-transparent flex flex-col justify-center items-center w-[40%]">
-          <div className="bg-transparent w-[80%] h-[75%]">
+          <div className="bg-transparent w-[80%] h-[60%]">
             <motion.div 
               initial={{opacity: 0}}
-              animate={{opacity: 1,x:0, y:-20,}}
+              animate={{opacity: 1,x:0, y:-25,}}
               transition={{ delay: 0.5, duration: 0.5 }}
               >
               <img src={COMICON} width="150px" className="comico-logo" />
@@ -23,29 +23,29 @@ function Header() {
             <div className="comic-con py-4 absolute z-50">
                 <motion.p 
                   initial={{opacity: 0}} 
-                  animate={{opacity: 1, x:0, y:-20,}}
+                  animate={{opacity: 1, x:0, y:-25,}}
                   transition={{ delay: 0.6, duration: 0.6}}
                   className="sub-title nerd-p">Nigeria's Biggest Comic Con
                 </motion.p>
               <div className="title pb-4">
                 <motion.h1
                    initial={{opacity: 0}} 
-                   animate={{opacity: 1, x:0, y:-20}}
-                   transition={{delay: 0.8, duration: 0.2}}
+                   animate={{opacity: 1, x:0, y:-25}}
+                   transition={{delay: 0.9, duration: 0.2}}
                    >
                    Nerdwork
                 </motion.h1>
                 <motion.h1 
                    initial={{opacity: 0}} 
-                   animate={{opacity: 1, x:0, y:-20}}
-                   transition={{delay: 0.9, duration: 0.2}}
+                   animate={{opacity: 1, x:0, y:-25}}
+                   transition={{delay: 1, duration: 0.2}}
                    >
                   Comic-con
                   </motion.h1>
                 <motion.h1 
                   initial={{opacity: 0}} 
-                  animate={{opacity: 1, x:0, y:-20}}
-                  transition={{delay: 1, duration: 0.2}}
+                  animate={{opacity: 1, x:0, y:-25}}
+                  transition={{delay: 1.1, duration: 0.2}}
                   >
                   2023
                   </motion.h1>
