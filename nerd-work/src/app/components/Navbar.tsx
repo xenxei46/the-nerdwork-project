@@ -1,7 +1,11 @@
 import React from 'react';
 import fb from '../../assets/socials/Fbfavicon.ico.png';
-import twitter from '../../assets/socials/twitterfavicon.ico.png';
+// import twitter from '../../assets/socials/twitterfavicon.ico.png';
 import ig from '../../assets/socials/IGfavicon.ico.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faFacebook,faInstagram } from '@fortawesome/free-brands-svg-icons';
+// import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' 
 // import '..../App.css'
 
 class Navbar extends React.Component {
@@ -10,13 +14,13 @@ class Navbar extends React.Component {
         <nav className="w-full flex justify-center">
             <div className=" w-[50%]">
                 <button className="w-8 h-8 rounded-md mt-2 px-2 m-1">
-                    <img src={fb}/>
+                  <FontAwesomeIcon icon={faTwitter} />
                 </button>
                 <button className="w-8 h-8 rounded-md px-2 m-1">
-                    <img src={twitter}/>
+                   <FontAwesomeIcon icon={faFacebook}/>
                 </button>   
                 <button className="w-8 h-8 rounded-md px-2 m-1">
-                    <img src={ig}/>
+                    <FontAwesomeIcon icon={faInstagram }/>
                 </button>   
                 <button className="w-30 h-8 rounded-md px-2 m-2">
                     Join our community
