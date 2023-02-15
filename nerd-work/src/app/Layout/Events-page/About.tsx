@@ -69,7 +69,6 @@ function About() {
                 <p> flex </p>
               </motion.h2> 
             </div>*/}
-
         </div> 
     )
   }

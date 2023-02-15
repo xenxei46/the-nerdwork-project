@@ -2,7 +2,12 @@ import React from 'react';
 import Navbar from '../../components/Navbar';
 import COMICON from '../Events-page/img/comiccon.png';
 import { motion } from "framer-motion";
-import image1 from '../../../assets/img/img-1.jpg'
+import image1 from '../../../assets/img/img-1.jpg';
+import image2 from '../../../assets/img/img-2.jpg';
+import image3 from '../../../assets/img/img-3.jpg';
+import community from '../../../assets/Events-img/community.png';
+import ticket from '../../../assets/Events-img/ticket.png';
+import logo from '../../../assets/Events-img/logo.png';
 
 function Header() {
 
@@ -13,14 +18,16 @@ function Header() {
       <div className="flex w-[20%] h-full md:w-full lg:w-full">
         <div className="bg-transparent flex flex-col justify-center items-center w-[40%]">
           <div className="bg-transparent w-[80%] h-[60%]">
-            <motion.div 
-              initial={{opacity: 0}}
-              animate={{opacity: 1,x:0, y:-25,}}
+            <motion.div className="hidden md:block lg:block xl:block"
+              initial={{opacity: 0.5}}
+              animate={{opacity: 1,x:0, y:-30,}}
               transition={{ delay: 0.5, duration: 0.5 }}
               >
-              <img src={COMICON} width="150px" className="comico-logo" />
+              <img src={COMICON} className="comico-logo w-[0px] lg:w-[150px]" />
             </motion.div>
-           
+            <div>
+                <img src={COMICON} className="comico-logo w-[0px] lg:w-[150px] md:hidden lg:hidden xl:hidden" />
+            </div>
             <div className="comic-con py-4 absolute z-50">
                 <motion.p 
                   initial={{opacity: 0}} 
@@ -28,7 +35,7 @@ function Header() {
                   transition={{ delay: 0.6, duration: 0.6}}
                   className="sub-title nerd-p">Nigeria's Biggest Comic Con
                 </motion.p>
-              <div className="title pb-4">
+              <div className="title md:pb-4 lg:pb-4 xl:pb-4">
                 <motion.h1
                    initial={{opacity: 0}} 
                    animate={{opacity: 1, x:0, y:-25}}
@@ -60,29 +67,46 @@ function Header() {
               </motion.button>
             </div>
             <div className="event-bottom bg-black md:hidden lg:hidden">
-              <div className="height w-full flex justify-center">
-                <button className="w-[60px] h-[60px] rounded-md px-2 m-2">
-
+              <div className="height w-full flex justify-center items-center">
+                <button className=" w-[70px] h-[70px] rounded-md px-2 m-2">
+                  <span className="flex justify-center items-center flex-col">
+                    <img src={community} className="w-8 -pb-2 "/>
+                    <p>Community</p>
+                  </span>
                 </button>
-                <button className="w-[60px] h-[60px] rounded-md px-2 m-2">
-                     
+                <button className="w-[70px] h-[70px] rounded-md px-2 m-2">      
+                  <span className="flex justify-center items-center flex-col">
+                    <img src={logo} className="w-8"/>
+                    <p>Nerdwork</p>
+                  </span> 
                 </button>
-                <button className="w-[60px] h-[60px] rounded-md px-2 m-2">
-                    
+                <button className="w-[70px] h-[70px] rounded-md px-2 m-2">
+                <span className="flex justify-center items-center flex-col">
+                    <img src={ticket}  className="w-8"/>
+                    <p>Buy tickets</p>
+                  </span>   
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div className=" w-[20%] object-contain m-0">
-          <div>
-            <img src={image1} className="img-1 object-contain "/>
+        <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
+          <div className="pic-box h-[100%] bg-black object-cover">
+            <img src={image1} className="object-cover "/>
           </div>
         </div>
-        <div className="img-2 w-[20%] "></div>
-        <div className="img-3 w-[20%] "></div>
+        <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
+          <div className="pic-box h-[100%] bg-black  object-cover">
+            <img src={image2} className="object-cover" />
+          </div>
+        </div>
+        <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
+          <div className="pic-box h-[100%] bg-black  object-cover">
+            <img src={image3} className="object-cover" />
+          </div>
+        </div>
       </div>
-    </div>
+    </div>  
     )
   }
 

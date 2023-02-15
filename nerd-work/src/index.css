@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.cdnfonts.com/css/antipasto-pro'); */
@@ -84,6 +83,7 @@ h1 {
     line-height: 43.2px;
     text-shadow: 3px 3px #070707f3; 
     letter-spacing: 2px;
+    /* margin-top: 5px; */
   }
   .nerd-p {
     font-size: 6px;
@@ -93,6 +93,8 @@ h1 {
     /* letter-spacing: 3%; */
     font-family: 'Comfortaa';
     text-shadow: 0 0 8px #000;
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
 }
 
