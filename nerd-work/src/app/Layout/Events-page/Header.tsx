@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar';
 import COMICON from '../Events-page/img/comiccon.png';
 import { motion } from "framer-motion";
+import image1 from '../../../assets/img/img-1.jpg'
 
 function Header() {
 
@@ -73,7 +74,11 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="img-1 w-[20%]"></div>
+        <div className=" w-[20%] object-contain m-0">
+          <div>
+            <img src={image1} className="img-1 object-contain "/>
+          </div>
+        </div>
         <div className="img-2 w-[20%] "></div>
         <div className="img-3 w-[20%] "></div>
       </div>

@@ -10,14 +10,26 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .img-1 {
-  background-image: url(assets/img/img-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url(assets/img/img-1.jpg); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
   /* background-position: center; */
   /* background-position: 600px 22px; */
   /* background-color: red; */
-  padding: 30px;
-  animation: animateBG 1s linear 0.1s alternate;
+  /* padding: 30px; */
+  /* animation: animateBG 1s linear 0.1s alternate; */
+  animation: zoom-in-zoom-out 1s ease alternate;
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(5, 5);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 .img-2 {
   background-image: url(assets/img/img-2.jpg);
@@ -26,7 +38,7 @@
   background-position: center;
   /* background-color: red; */
   padding: 30px;
-  animation: animateBG 1s linear 0.1s alternate;
+  /* animation: animateBG 1s linear 0.1s alternate; */
 }
 .img-3 {
   background-image: url(assets/img/img-3.jpg);
@@ -36,7 +48,7 @@
   padding: 30px;
   /* background-color: red; */
   /* animation: animate alternate-reverse 10s forwards infinite ease-in-out; */
-  animation: animateBG 1s linear 0.1s alternate;
+  /* animation: animateBG 1s linear 0.1s alternate; */
 }
 
 @keyframes animateBG {
