@@ -23,10 +23,10 @@ function Header() {
               animate={{opacity: 1,x:0, y:-30,}}
               transition={{ delay: 0.5, duration: 0.5 }}
               >
-              <img src={COMICON} className="comico-logo w-[0px] lg:w-[150px]" />
+              <img src={COMICON} className="comico-logo w-[0px] md:w-[150px] lg:w-[150px] xl:w-[150px]" />
             </motion.div>
             <div>
-                <img src={COMICON} className="comico-logo w-[0px] lg:w-[150px] md:hidden lg:hidden xl:hidden" />
+                <img src={COMICON} className="comico-logo w-[120px] lg:w-[150px] md:hidden lg:hidden xl:hidden" />
             </div>
             <div className="comic-con py-4 absolute z-50">
                 <motion.p 
@@ -66,7 +66,7 @@ function Header() {
                 Ticket Drops
               </motion.button>
             </div>
-            <div className="event-bottom bg-black md:hidden lg:hidden">
+            <div className="event-bottom bg-black md:hidden lg:hidden xl:hidden">
               <div className="height w-full flex justify-center items-center">
                 <button className=" w-[70px] h-[70px] rounded-md px-2 m-2">
                   <span className="flex justify-center items-center flex-col">
@@ -91,18 +91,18 @@ function Header() {
           </div>
         </div>
         <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
-          <div className="pic-box h-[100%] bg-black object-cover">
-            <img src={image1} className="object-cover "/>
+          <div className="pic-box h-[100%] bg-slate-900 object-cover">
+            <img src={image1} className="object-fill h-[100%] "/>
           </div>
         </div>
         <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
-          <div className="pic-box h-[100%] bg-black  object-cover">
-            <img src={image2} className="object-cover" />
+          <div className="pic-box h-[100%] bg-slate-900  object-cover">
+            <img src={image2} className="object-fill h-[100%]" />
           </div>
         </div>
         <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
-          <div className="pic-box h-[100%] bg-black  object-cover">
-            <img src={image3} className="object-cover" />
+          <div className="pic-box h-[100%] bg-slate-900  object-cover">
+            <img src={image3} className="object-fill h-[100%]" />
           </div>
         </div>
       </div>
