@@ -91,18 +91,18 @@ function Header() {
           </div>
         </div>
         <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
-          <div className="pic-box h-[100%] bg-slate-900 object-cover">
-            <img src={image1} className="object-fill h-[100%] "/>
+          <div className="pic-box h-[100%] bg-slate-900 object-cover w-[100%]">
+            <img src={image1} className="object-fill h-[100%] w-[100%] "/>
           </div>
         </div>
         <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
           <div className="pic-box h-[100%] bg-slate-900  object-cover">
-            <img src={image2} className="object-fill h-[100%]" />
+            <img src={image2} className="object-fill h-[100%] w-[100%]  " />
           </div>
         </div>
         <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
-          <div className="pic-box h-[100%] bg-slate-900  object-cover">
-            <img src={image3} className="object-fill h-[100%]" />
+          <div className="pic-box h-[100%] bg-slate-900  object-cover w-[100%]">
+            <img src={image3} className="h-[100%] w-[100%]" />
           </div>
         </div>
       </div>
