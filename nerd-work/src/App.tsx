@@ -16,14 +16,13 @@ function App() {
       setLoading(false);
     },2000)
   }
-
-  return <>(
+  return (
     !loading && (
     <div className="w-full">
       <EventPage></EventPage>
     </div>
   )
-  );</>
+  );
 }
 
 export default App
