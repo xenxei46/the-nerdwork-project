@@ -86,27 +86,27 @@ function Header() {
         </div>
       </div>
       <div className="sm-nav flex items-center relative h-[12vh] w-full bg-black md:hidden lg:hidden xl:hidden">
-              <div className="height w-[100%] p-4 flex justify-center items-center">
-                <button className=" w-[70px] h-[60px] rounded-md px-2 m-2">
+              <div className="height w-[100%] flex justify-center items-center">
+                <button className=" w-[20vw] h-[8vh] rounded-md px-2 m-2">
                   <span className="flex justify-center items-center flex-col">
                     <img src={community} className="w-5 -pb-4 "/>
                     <p className="">Community</p>
                   </span>
                 </button>
-                <button className=" w-[70px] h-[60px] rounded-md px-2 m-2">
+                <button className=" w-[20vw] h-[8vh] rounded-md px-2 m-2">
                   <span className="flex justify-center items-center flex-col">
                     <img src={logo} className="w-5 -pb-4 "/>
                     <p>Nerdwork</p>
                   </span>
                 </button>
-                <button className=" w-[70px] h-[60px] rounded-md px-2 m-2">
+                <button className=" w-[20vw] h-[8vh] rounded-md px-2 m-2">
                   <span className="flex justify-center items-center flex-col">
                     <img src={ticket} className="w-5 -pb-4 "/>
                     <p className="text">Buy tickets</p>
                   </span>
                 </button>
               </div>
-            </div>
+      </div>
     </div>  
     )
   }
