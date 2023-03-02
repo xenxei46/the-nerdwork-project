@@ -2,16 +2,16 @@ import React from 'react';
 import Navbar from '../../components/Navbar';
 import COMICON from '../Events-page/img/comiccon.png';
 import { motion } from "framer-motion";
-import image1 from '../../../assets/img/img-1.jpg';
-import image2 from '../../../assets/img/img-2.jpg';
-import image3 from '../../../assets/img/img-3.jpg';
+import image1 from '../../../assets/img/demonslayer.webp';
+import image2 from '../../../assets/img/chainsawman.webp';
+import image3 from '../../../assets/img/jokergirl.webp';
 import community from '../../../assets/Events-img/community.png';
 import ticket from '../../../assets/Events-img/ticket.png';
 import logo from '../../../assets/Events-img/logo.png';
 
 function Header() {
 
-    return (<div className="event-container w-full md:h-[100vh] lg:h-[100vh]">
+    return (<div className="event-container w-full h-[100vh] md:h-[100vh] lg:h-[100vh]">
       <div>
           <Navbar></Navbar>
       </div>
@@ -23,7 +23,7 @@ function Header() {
               animate={{opacity: 1,x:0, y:-30,}}
               transition={{ delay: 0.5, duration: 0.5 }}
               >
-              <img src={COMICON} className="comico-logo w-[0px] md:w-[150px] lg:w-[150px] xl:w-[150px]" />
+              <img src={COMICON} className="comico-logo w-[0px] md:w-[150px] lg:w-[120px] xl:w-[150px]" />
             </motion.div>
             <div>
                 <img src={COMICON} className="comico-logo w-[120px] lg:w-[150px] md:hidden lg:hidden xl:hidden" />
@@ -35,7 +35,7 @@ function Header() {
                   transition={{ delay: 0.6, duration: 0.6}}
                   className="sub-title nerd-p">Nigeria's Biggest Comic Con
                 </motion.p>
-              <div className="title md:pb-4 lg:pb-4 xl:pb-4">
+              <div className="title md:pb-4 lg:pb-0 xl:pb-0">
                 <motion.h1
                    initial={{opacity: 0}} 
                    animate={{opacity: 1, x:0, y:-25}}
@@ -66,26 +66,38 @@ function Header() {
                 Ticket Drops
               </motion.button>
             </div>
-            <div className="event-bottom bg-black md:hidden lg:hidden xl:hidden">
-              <div className="height w-full flex justify-center items-center">
-                <button className=" w-[70px] h-[70px] rounded-md px-2 m-2">
+            <div className="sm-nav flex items-center absolute h-[10vh] w-full bg-black md:hidden lg:hidden xl:hidden">
+              <div className="height w-[100%] flex justify-center items-center">
+                <button className=" w-[70px] h-[60px] rounded-md px-2 m-2">
                   <span className="flex justify-center items-center flex-col">
-                    <img src={community} className="w-8 -pb-2 "/>
-                    <p>Community</p>
+                    <img src={community} className="w-5 -pb-4 "/>
+                    <p className="">Community</p>
                   </span>
                 </button>
-                <button className="w-[70px] h-[70px] rounded-md px-2 m-2">      
+                <button className=" w-[70px] h-[60px] rounded-md px-2 m-2">
+                  <span className="flex justify-center items-center flex-col">
+                    <img src={logo} className="w-5 -pb-4 "/>
+                    <p>Nerdwork</p>
+                  </span>
+                </button>
+                <button className=" w-[70px] h-[60px] rounded-md px-2 m-2">
+                  <span className="flex justify-center items-center flex-col">
+                    <img src={ticket} className="w-5 -pb-4 "/>
+                    <p className="text">Buy tickets</p>
+                  </span>
+                </button>
+                {/* <button className="w-[70px] h-[60px] rounded-md px-2 m-2">      
                   <span className="flex justify-center items-center flex-col">
                     <img src={logo} className="w-8"/>
                     <p>Nerdwork</p>
                   </span> 
                 </button>
-                <button className="w-[70px] h-[70px] rounded-md px-2 m-2">
+                <button className="w-[70px] h-[60px] rounded-md px-2 m-2">
                 <span className="flex justify-center items-center flex-col">
                     <img src={ticket}  className="w-8"/>
                     <p>Buy tickets</p>
                   </span>   
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

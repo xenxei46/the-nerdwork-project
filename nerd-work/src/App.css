@@ -66,6 +66,7 @@ animation: zoom-out-onLoad 1.5s ease alternate;
   font-size: 32px;
 }
 @media screen and (max-width: 640px) {
+  
   .nav {
     display: none;
     background: transparent;
@@ -88,10 +89,10 @@ animation: zoom-out-onLoad 1.5s ease alternate;
   .comic-con {
     background-image: url(assets/bg/african-pattern-blue.png);
     position: absolute;
-    width: 250px;
+    width: 260px;
     height: 250px;
     left: 5%;
-    top: 64%;
+    top: 48%;
     padding: 12px;
   }
   .img-1, .img-2, .img-3 {
@@ -100,7 +101,7 @@ animation: zoom-out-onLoad 1.5s ease alternate;
   .event-container {
     background-image: url(assets/img/img-1.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     width: 100%; 
   }
   .ticket-Drops {
@@ -114,14 +115,15 @@ animation: zoom-out-onLoad 1.5s ease alternate;
     font-weight: 400;
     text-align: center;
   }
-  .event-bottom {
-    position: absolute;
-    height: 10vh;
+  .sm-nav {
     left: 0%;
     right: 0%;
-    top: 100%;
+    top: 90%;
     bottom: 0%;
   }
+  /* .sm-nav .text {
+    font-size: 10px;
+  } */
 
 }
 @media screen and (max-width:375px){
@@ -129,14 +131,14 @@ animation: zoom-out-onLoad 1.5s ease alternate;
     height: 120vh;
     width: 100%;
   }
-  .event-bottom {
+  /* .sm-nav {
     height: 14vh;
     position: absolute;
     left: 0%;
     right: 0%;
     top: 120%;
     bottom: 0%;
-  }
+  } */
   .ticket-Drops {
     width: 120px;
     height: 42px;
