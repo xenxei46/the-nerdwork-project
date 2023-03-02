@@ -11,7 +11,7 @@ import logo from '../../../assets/Events-img/logo.png';
 
 function Header() {
 
-    return (<div className="event-container w-full h-[100vh] md:h-[100vh] lg:h-[100vh]">
+    return (<div className="event-container  w-full h-[88vh] md:h-[100vh] lg:h-[100vh]">
       <div>
           <Navbar></Navbar>
       </div>
@@ -28,7 +28,7 @@ function Header() {
             <div>
                 <img src={COMICON} className="comico-logo w-[120px] lg:w-[150px] md:hidden lg:hidden xl:hidden" />
             </div>
-            <div className="comic-con py-4 absolute z-50">
+            <div className="comic-con py-4 md:absolute lg:absolute z-50">
                 <motion.p 
                   initial={{opacity: 0}} 
                   animate={{opacity: 1, x:0, y:-25,}}
@@ -66,8 +66,27 @@ function Header() {
                 Ticket Drops
               </motion.button>
             </div>
-            <div className="sm-nav flex items-center absolute h-[10vh] w-full bg-black md:hidden lg:hidden xl:hidden">
-              <div className="height w-[100%] flex justify-center items-center">
+            
+          </div>
+        </div>
+        <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
+          <div className="pic-box h-[100%] bg-slate-900 object-cover w-[100%]">
+            <img src={image1} className="object-fill h-[100%] w-[100%] "/>
+          </div>
+        </div>
+        <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
+          <div className="pic-box h-[100%] bg-slate-900  object-cover">
+            <img src={image2} className="object-fill h-[100%] w-[100%]  " />
+          </div>
+        </div>
+        <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
+          <div className="pic-box h-[100%] bg-slate-900  object-cover w-[100%]">
+            <img src={image3} className="h-[100%] w-[100%]" />
+          </div>
+        </div>
+      </div>
+      <div className="sm-nav flex items-center relative h-[12vh] w-full bg-black md:hidden lg:hidden xl:hidden">
+              <div className="height w-[100%] p-4 flex justify-center items-center">
                 <button className=" w-[70px] h-[60px] rounded-md px-2 m-2">
                   <span className="flex justify-center items-center flex-col">
                     <img src={community} className="w-5 -pb-4 "/>
@@ -88,24 +107,6 @@ function Header() {
                 </button>
               </div>
             </div>
-          </div>
-        </div>
-        <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
-          <div className="pic-box h-[100%] bg-slate-900 object-cover w-[100%]">
-            <img src={image1} className="object-fill h-[100%] w-[100%] "/>
-          </div>
-        </div>
-        <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
-          <div className="pic-box h-[100%] bg-slate-900  object-cover">
-            <img src={image2} className="object-fill h-[100%] w-[100%]  " />
-          </div>
-        </div>
-        <div className=" w-[20%] h-full hidden md:block lg:block xl:block">
-          <div className="pic-box h-[100%] bg-slate-900  object-cover w-[100%]">
-            <img src={image3} className="h-[100%] w-[100%]" />
-          </div>
-        </div>
-      </div>
     </div>  
     )
   }
