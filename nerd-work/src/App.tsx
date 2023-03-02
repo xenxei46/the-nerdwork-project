@@ -3,6 +3,10 @@ import React, { useState } from 'react'
 import EventPage from '../src/app/Layout/EventPage';
 import './App.css';
 
+interface loading {
+  setLoadig: boolean;
+}
+
 function App() {
   const [loading, setLoading] = useState(true);
   const spinner = document.getElementById('spinner');
@@ -13,13 +17,13 @@ function App() {
     },2000)
   }
 
-  return (
+  return <>(
     !loading && (
     <div className="w-full">
       <EventPage></EventPage>
     </div>
   )
-  );
+  );</>
 }
 
 export default App
