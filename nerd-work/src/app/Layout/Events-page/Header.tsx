@@ -86,18 +86,6 @@ function Header() {
                     <p className="text">Buy tickets</p>
                   </span>
                 </button>
-                {/* <button className="w-[70px] h-[60px] rounded-md px-2 m-2">      
-                  <span className="flex justify-center items-center flex-col">
-                    <img src={logo} className="w-8"/>
-                    <p>Nerdwork</p>
-                  </span> 
-                </button>
-                <button className="w-[70px] h-[60px] rounded-md px-2 m-2">
-                <span className="flex justify-center items-center flex-col">
-                    <img src={ticket}  className="w-8"/>
-                    <p>Buy tickets</p>
-                  </span>   
-                </button> */}
               </div>
             </div>
           </div>
